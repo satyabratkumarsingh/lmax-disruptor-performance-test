@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>lmax-disruptor-example</groupId>
-    <artifactId>lmax-disruptor-example</artifactId>
+    <groupId>lmax-disruptor-performance-test</groupId>
+    <artifactId>lmax-disruptor-performance-test</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
     <properties>
@@ -14,9 +14,15 @@
         <quickfix.version>2.3.1</quickfix.version>
         <log4j.version>1.2.17</log4j.version>
         <sl4j.version>2.0.0-alpha5</sl4j.version>
+        <lmax.version>3.4.4</lmax.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.lmax</groupId>
+            <artifactId>disruptor</artifactId>
+            <version>${lmax.version}</version>
+        </dependency>
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
